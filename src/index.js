@@ -2,11 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './home'
+import About from './about'
+import Login from './login'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const link = {
+  width: '100px',
+  padding: '12px',
+  margin: '0 6px 6px',
+  background: 'blue',
+  textDecoration: 'none',
+  color: 'white',
+}
