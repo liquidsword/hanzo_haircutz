@@ -48,10 +48,11 @@ const Navbar = () =>
 ReactDOM.render((
   <Router>
     <React.Fragment>
-      //<Navbar />
-      <Route path="/" component={Home} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/login" component={Login} />
+    <br/>
+    <Navbar />
+      <Route exact path="/components/home" component={Home} />
+      <Route exact path="/components/about" component={About} />
+      <Route exact path="/components/login" component={Login} />
     </React.Fragment>
   </Router>),
   document.getElementById('root')
