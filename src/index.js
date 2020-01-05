@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import Home from './components/home'
 import About from './components/about'
 import Login from './components/login'
+import Scheduler from './components/scheduler'
 
 const link = {
   width: '100px',
@@ -42,6 +43,14 @@ const Navbar = () =>
         background: 'darkblue'
       }}
       >Login</NavLink>
+      <NavLink
+        to="/components/scheduler"
+        exact
+        style={link}
+        activeStyle={{
+          background: 'darkblue'
+        }}
+        >Scheduler</NavLink>
   </div>;
 
 
@@ -53,6 +62,7 @@ ReactDOM.render((
       <Route exact path="/components/home" component={Home} />
       <Route exact path="/components/about" component={About} />
       <Route exact path="/components/login" component={Login} />
+      <Route exact path="/components/scheduler" component={Scheduler} />
     </React.Fragment>
   </Router>),
   document.getElementById('root')
