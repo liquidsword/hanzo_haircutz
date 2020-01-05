@@ -59,7 +59,7 @@ ReactDOM.render((
     <React.Fragment>
     <br/>
     <Navbar />
-      <Route exact path="/components/home" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route exact path="/components/about" component={About} />
       <Route exact path="/components/login" component={Login} />
       <Route exact path="/components/scheduler" component={Scheduler} />
