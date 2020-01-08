@@ -7,7 +7,6 @@ import Home from './components/home'
 import About from './components/about'
 import Login from './components/login'
 import Scheduler from './components/scheduler'
-import HomepageImage from './components/homepageImage'
 
 const link = {
   width: '100px',
