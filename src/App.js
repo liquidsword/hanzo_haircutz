@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
 import './index.css';
-// import './home.css';
-import Home from './components/home'
 
 import {
   BrowserRouter as Router,
@@ -10,3 +8,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
+class App extends React.Component {
+  render (){
+    return (
+       <div className="App"></div>
+    );
+  }
+}
+
+export default App;
