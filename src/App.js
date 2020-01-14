@@ -1,25 +1,20 @@
 import React from 'react';
-import './App.css';
-import './index.css';
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
 class App extends React.Component {
 
   componentDidMount(){
-    fetch('http://localhoust:3000/api/v1/accounts')
+    fetch('http://localhost:3000/api/v1/accounts', {
+      method: 'GET'
+    })
       .then(response => response.json())
-      .then(date => console.log(data))
+      .then(data => console.log(data))
     }
 
   render (){
     return (
-       <div className="App"></div>
+       <div className="App">
+       App
+       </div>
     );
   }
 }
