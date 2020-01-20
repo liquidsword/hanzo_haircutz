@@ -3,7 +3,7 @@ export function fetchAccounts(action){
     fetch('http://localhost:3000/api/v1/account')
       .then(resp => resp.json())
       .then(accounts => dispatch({
-        type: 'FETCH_ACCOUNTS'
+        type: 'FETCH_ACCOUNTS',
         payload: accounts
       }))
     }
