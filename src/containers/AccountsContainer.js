@@ -1,8 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import {Route} from 'react-router-dom';
 import {fetchAccounts} from '../actions/fetchAccounts';
 import AccountForm from '../components/AccountForm';
 import AccountList from '../components/AccountList';
+import AccountShowPage from '../components/AccountShowPage';
 
 class AccountsContainer extends React.Component {
 
@@ -13,8 +15,9 @@ class AccountsContainer extends React.Component {
   render(){
     return(
       <div>
-        <AccountForm/><br/>
-        <AccountList accountList={this.props.accountList}/>
+        <Route path='/accounts/new' component={AccountForm}/>
+        <Route path='/accounts/:id' render={(routerProps)=> <AccountList {...routerProps} accounts={this.props.accounts}/>}/>
+        <Route exact path='/accounts' render={(routerProps)=> <AccountList {...routerProps} accounts={this.props.accounts}/> }/>
       </div>
     )
   }

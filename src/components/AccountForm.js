@@ -14,8 +14,12 @@ class AccountForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    this.props.addAccount(this.state)
-  }
+      this.props.addAccount(this.state)
+      this.setState({
+        name:'',
+        choice:''
+      })
+    }
 
   render() {
     return (
