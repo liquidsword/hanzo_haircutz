@@ -4,7 +4,8 @@ import ChoicesContainer from '../containers/ChoicesContainer'
 
 const Account = (props) => {
 
-  let account = props.accountList[props.match.params.id - 1]
+  // let account = props.accountList[props.match.params.id - 1]
+  let account = props.accounts.filter(account => account.id == props.match.params.id)[0]
   console.log(account)
 
   return (

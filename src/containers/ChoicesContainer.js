@@ -6,7 +6,7 @@ class ChoicesContainer extends React.Component {
   render() {
     return (
       <div>
-        <ChoicesForm/>
+        <ChoicesForm account={this.props.account}/>
         <ChoicesList choices={this.props.account && this.props.account.choices}/>
       </div>
     )
