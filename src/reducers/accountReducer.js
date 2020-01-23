@@ -12,6 +12,16 @@ export default function accountReducer(state = {accountList: []}, action){
             return account
           }
       })
+      return {...state, accounts: accounts}
+    case 'DELETE_CHOICE':
+      let accountsChoiceDelete = state.accounts.map(account => {
+        if (account.id === action.payload.id) {
+          return action.payload
+        } else {
+            return account
+          }
+      })
+      return {...state, accounts: accountsChoiceDelete}
     default:
       return state
   }

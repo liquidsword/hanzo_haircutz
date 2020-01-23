@@ -1,4 +1,5 @@
 export const addChoice = (choice, accountId) => {
+
   return(dispatch) => {
     fetch(`http://localhost:3000/api/v1/accounts/${accountId}/choices`,{
       method: 'POST',
@@ -8,6 +9,6 @@ export const addChoice = (choice, accountId) => {
       body: JSON.stringify(choice)
     })
       .then(response => response.json())
-      .then(choice => dispatch({type:'ADD_CHOICE', payload:choice}))
+      .then(account => dispatch({type:'ADD_CHOICE', payload:account}))
   }
 }

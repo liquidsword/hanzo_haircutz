@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import addChoice from '../actions/addChoice';
+import {addChoice} from '../actions/addChoice';
 
 class ChoicesForm extends React.Component {
 
