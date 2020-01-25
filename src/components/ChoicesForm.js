@@ -5,7 +5,7 @@ import {addChoice} from '../actions/addChoice';
 class ChoicesForm extends React.Component {
 
   state = {
-    name:'Fade',
+    name:'',
     description:''
   }
 
@@ -19,7 +19,7 @@ class ChoicesForm extends React.Component {
     event.preventDefault()
     this.props.addChoice(this.state, this.props.account.id)
     this.setState({
-      name:'Fade',
+      name:'hairstyle',
       description:''
     })
   }
@@ -28,7 +28,7 @@ class ChoicesForm extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label>Name:</label>
+          <label>Style Name:</label>
             <select name="name" value={this.state.name} onChange={this.handleChange}>
               <option>Fade</option>
               <option>Afro</option>

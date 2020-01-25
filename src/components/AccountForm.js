@@ -28,7 +28,7 @@ class AccountForm extends React.Component {
           <label>Username: </label>
           <input type='text' placeholder='Name' value={this.state.name} name="name" onChange ={this.handleChange}/><br/>
           <label>Choice: </label>
-          <input type='text' placeholder='style choice' value={this.state.choice} name="choice" onChange ={this.handleChange}/><br/>
+          <input type='text' placeholder='Style choice' value={this.state.choice} name="choice" onChange ={this.handleChange}/><br/>
           <input type='submit'/>
         </form>
       </div>

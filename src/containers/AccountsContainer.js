@@ -8,10 +8,6 @@ import AccountShowPage from '../components/AccountShowPage';
 
 class AccountsContainer extends React.Component {
 
-  componentDidMount(){
-    this.props.fetchAccounts()
-  }
-
   render(){
     return(
       <div>

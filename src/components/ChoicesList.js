@@ -6,7 +6,7 @@ const ChoicesList = (props) => {
 
   console.log(props.choicesList)
 
-  const handleDelete = (accountId, choiceId) => {
+  const handleDelete = (choice) => {
     props.deleteChoice(choice.id, choice.account_id)
   }
 

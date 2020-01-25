@@ -1,10 +1,11 @@
-export function fetchAccounts(action){
+export function fetchAccounts(){
+
   return(dispatch) => {
-    fetch('http://localhost:3000/api/v1/account')
+    fetch('http://localhost:3000/api/v1/accounts')
       .then(resp => resp.json())
-      .then(accounts => dispatch({
+      .then(accountList => dispatch({
         type: 'FETCH_ACCOUNTS',
-        payload: accounts
+        payload: accountList
       }))
     }
   }
